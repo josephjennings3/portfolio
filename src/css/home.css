@@ -1,0 +1,25 @@
+.container-home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: flex-start;
+    padding-top: 120px;
+}
+
+.home {
+    width: 50%;
+}
+
+.intro {
+    font-size: 40px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.intro-sub {
+    font-size: 30px;
+}
+
+span {
+    text-decoration: underline;
+}
