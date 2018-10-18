@@ -12,6 +12,11 @@ header {
 
 }
 
+.menu {
+    text-decoration: none;
+
+}
+
 ul {
     float: right;
     margin: 0px;
@@ -23,3 +28,9 @@ li {
     margin: 5px;
     border-top: 1px solid black;
 }
+
+a {
+    text-decoration: none;
+    color: rgba(0,0,0,.75);
+}
+

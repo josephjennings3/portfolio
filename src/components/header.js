@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../css/header-css.css';
-import { Link } from 'react-router-dom';
+import { BrowserRouter as Router, Link, NavLink } from 'react-router-dom';
+
 class Header extends Component {
     render() {
         return (
@@ -8,14 +9,32 @@ class Header extends Component {
                 <section className="title">
                     Joseph Jennings III
                 </section>
-                <section className="menu">
-                    <ul>
-                        <li><Link to="#">Projects</Link></li>
-                        <li>About</li>
-                        <li>Resume</li>
-                        <li>Contact</li>
-                    </ul>
-                </section>
+                <Router>
+                    <section className="menu">
+                        <ul>
+                            <li>
+                                <NavLink to ='/' exact activeStyle={
+                                    {borderTop: 'solid 3px #000'}
+                                }>Projects</NavLink>
+                            </li>
+                            <li>
+                                <NavLink to ='/pages/about' exact activeStyle={
+                                    {borderTop: 'solid 3px #000'}
+                                }>About</NavLink>
+                            </li>
+                            <li>
+                                <NavLink to ='/pages/resume' exact activeStyle={
+                                    {borderTop: 'solid 3px #000'} 
+                                }>Resume</NavLink>
+                            </li>
+                            <li>
+                                <NavLink to ='/pages/contact' exact activeStyle={
+                                    {borderTop: 'solid 3px #000'} 
+                                }>Contact</NavLink>
+                            </li>
+                        </ul>
+                    </section>
+                </Router>
             </header>
         );
     }
