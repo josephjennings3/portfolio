@@ -8,6 +8,19 @@
 
 .home {
     width: 50%;
+    animation: fadeAndScale 1s cubic-bezier(.84,.2,.41,1.11);
+    transform-origin: center top;
+}
+
+@keyframes fadeAndScale {
+    from {
+        opacity: 0;
+        transform: scale3d(.75, .75, 1);
+    }
+    to {
+        opacity: 1;
+        transform: scale3d(1, 1, 1);
+    }
 }
 
 .intro {
