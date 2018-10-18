@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import '../css/header-css.css';
-import { BrowserRouter as Router, Link, NavLink, Switch, Route } from 'react-router-dom';
-import About from '../pages/about.js';
-import Contact from '../pages/contact.js';
-import Resume from '../pages/resume.js';
+import { NavLink } from 'react-router-dom';
+
 
 class Header extends Component {
     render() {
@@ -11,12 +9,12 @@ class Header extends Component {
             <div className="container">
                 <header>
                     <section className="title">
-                        Joseph Jennings III
+                        <NavLink to ='/' exact >Joseph Jennings III</NavLink>
                     </section>
                         <section className="menu">
                             <ul>
                                 <li>
-                                    <NavLink to ='/' exact activeStyle={
+                                    <NavLink to ='/pages/projects' exact activeStyle={
                                         {borderTop: 'solid 3px #000'}
                                     }>Projects</NavLink>
                                 </li>
@@ -38,11 +36,6 @@ class Header extends Component {
                             </ul>
                         </section>
                 </header>
-                <Switch>
-                            <Route exact path= '/pages/about' component={About} />
-                            <Route exact path= '/pages/contact' component={Contact} />
-                            <Route exact path= '/pages/resume' component={Resume} />
-                        </Switch>
             </div>
         );
     }
