@@ -11,7 +11,7 @@ class Header extends Component {
                     <section className="title">
                         <NavLink to ='/' exact >Joseph Jennings III</NavLink>
                     </section>
-                        <section className="menu">
+                        <nav>
                             <ul>
                                 <li>
                                     <NavLink to ='/pages/projects' exact activeStyle={
@@ -34,7 +34,7 @@ class Header extends Component {
                                     }>Contact</NavLink>
                                 </li>
                             </ul>
-                        </section>
+                        </nav>
                 </header>
             </div>
         );
