@@ -6,7 +6,11 @@
     padding-top: 200px;
 }
 
-.animated {
+.home {
+    padding-bottom: 200px;
+}
+
+.animated-intro {
     width: 50%;
 }
 
@@ -22,4 +26,36 @@
 
 span {
     text-decoration: underline;
+}
+
+.arrow {
+    padding-bottom: 150px;
+}
+
+.material-icons { 
+    font-size: 100px; 
+}
+/* -------------- PROJECTS------------- */
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+h1 {
+    display: block;
+    padding-bottom: 50px;
+}
+
+.project-container {
+    justify-content: space-evenly;
+    display: flex;
+    width: 100%;
+}
+
+.project-ex {
+    display: inline;
 }
