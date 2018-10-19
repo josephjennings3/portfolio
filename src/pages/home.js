@@ -34,19 +34,19 @@ class Home extends Component {
                 </div>
             </Animated>
             <Animated animationIn="fadeInDown" isVisible={true} className="arrow">
-                <i class="material-icons">
-                    keyboard_arrow_down
-                </i>
+                <a href="#">
+                    <i class="material-icons" onClick={()=>this.operation()}>keyboard_arrow_down</i>
+                </a>
+
+                    {
+                        this.state.showProjects?
+                        <div>
+                            <Projects />
+                        </div>
+                        :null
+                    }
+                    
             </Animated>
-            <button onClick={()=>this.operation()}>CLICK ME</button>
-            {
-                this.state.showProjects?
-                <div>
-                    <Projects />
-                </div>
-                :null
-            }
-            
         </div>
       );
     }
