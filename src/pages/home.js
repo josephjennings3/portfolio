@@ -1,6 +1,14 @@
 import React, { Component } from 'react';
 import '../css/home.css';
 import {Animated} from "react-animated-css";
+import broadway from '../images/broadway4.jpg';
+import bedford from '../images/bedfordicon.png';
+import inicon from '../images/inicon.png';
+import ishi from '../images/ishiicon.png';
+import move from '../images/moveicon.png';
+import native from '../images/nativeicon.png';
+import newicon from '../images/newicon.png';
+import Button from '@material-ui/core/Button';
 
 
 class Home extends Component {
@@ -13,7 +21,7 @@ class Home extends Component {
                         Hello, I'm Joseph Jennings
                     </div>
                     <div className="intro-sub">
-                        I am a <span>Front-End Developer</span> based in San Diego training in Full Stack and interested UI/UX design.
+                        I am a <div className="fed">Front-End Developer</div> based in San Diego training in Full Stack and interested UI/UX design.
                     </div>
                 </div>
             </Animated>
@@ -23,34 +31,62 @@ class Home extends Component {
                 </i>
             </Animated>
             <main className="projects">
-                <h1>Projects</h1>
+                <p className="title">Projects</p>
                 <div className="project-container">
                     <section className="project-ex">
-                        project 1
+                        <img src={broadway} />
+                        <p>Broadway Project</p>
+                        <Button variant="contained">
+                          <span classname="view-button"> View Broadway </span>
+                        </Button>
                     </section>
                     <section className="project-ex">
-                        project 2
+                        <img src={bedford} />
+                        <p>Bedford Project</p>
+                        <Button variant="contained">
+                         <span classname="view-button"> View Bedford </span>
+                        </Button>
                     </section>
                 </div>
                 <div className="project-container">
                     <section className="project-ex">
-                        project 3
+                        <img src={inicon} />
+                        <p>Innovation Project</p>
+                        <Button variant="contained">
+                            <span classname="view-button"> View Innovation </span>
+                        </Button>
                     </section>
                     <section className="project-ex">
-                        project 4
+                        <img src={ishi} />
+                        <p>Ishimoto Project</p>
+                        <Button variant="contained">
+                          <span classname="view-button"> View Ishimoto </span>
+                        </Button>
                     </section>
                 </div>
                 <div className="project-container">  
                     <section className="project-ex">
-                        project 5
+                        <img src={move} />
+                        <p>Move Project</p>
+                        <Button variant="contained">
+                       <span classname="view-button">   View Move  </span>
+                        </Button>
                     </section>
                     <section className="project-ex">
-                        project 6
+                        <img src={native} />
+                        <p>Native Project</p>
+                        <Button variant="contained">
+                        <span classname="view-button">  View Native </span>
+                        </Button>
                     </section>
                 </div>    
-                <div className="project-container">
+                <div className="project-container bottom">
                     <section className="project-ex">
-                        project 7
+                        <img src={newicon} />
+                        <p>Newsroom Project</p>
+                        <Button variant="contained">
+                          <span classname="view-button"> View Newsroom </span>
+                        </Button>
                     </section>
                 </div>
             </main>
