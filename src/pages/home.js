@@ -1,10 +1,25 @@
 import React, { Component } from 'react';
 import '../css/home.css';
 import {Animated} from "react-animated-css";
+import Projects from '../components/projects';
 
 
 
 class Home extends Component {
+    constructor() {
+        super()
+        this.state={
+            showProjects:false
+        }
+    }
+
+    operation(){
+        this.setState({
+            showProjects:true
+        })
+    }
+
+
     render() {
       return (
         <div className="container-home">
@@ -23,6 +38,15 @@ class Home extends Component {
                     keyboard_arrow_down
                 </i>
             </Animated>
+            <button onClick={()=>this.operation()}>CLICK ME</button>
+            {
+                this.state.showProjects?
+                <div>
+                    <Projects />
+                </div>
+                :null
+            }
+            
         </div>
       );
     }
