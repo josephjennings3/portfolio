@@ -12,6 +12,17 @@
     padding-right: 30px;
 }
 
+.project-title {
+    margin-bottom: 3px;
+}
+
+.lang {
+    font-size: 12px;
+    padding-bottom: 10px;
+    margin: 0px;
+    font-style: italic;
+}
+
 .project-container {
     display: flex;
     width: 75%;
@@ -24,7 +35,7 @@
    align-items: center;
    border-bottom: 1px solid black;
    margin-left: 22px;
-   padding-bottom: 22px;
+   padding-bottom: 12px;
 }
 
 .project-ex img {

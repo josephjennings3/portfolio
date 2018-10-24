@@ -2,10 +2,8 @@ import React, { Component } from 'react';
 import '../css/home.css';
 import {Animated} from "react-animated-css";
 import Projects from '../components/projects';
-import ScrollableAnchor from 'react-scrollable-anchor';
-
-
-
+import  ScrollableAnchor  from 'react-scrollable-anchor';
+import  { configureAnchors }  from 'react-scrollable-anchor';
 
 class Home extends Component {
     constructor() {
@@ -20,6 +18,9 @@ class Home extends Component {
             showProjects:true
         })
     }
+
+    // configureAnchors({offset: 5, scrollDuration: 200})
+
 
 
     render() {
@@ -39,7 +40,7 @@ class Home extends Component {
                 <a href="#projectsSection">
                     <i class="material-icons" onClick={()=>this.operation()}>keyboard_arrow_down</i>
                 </a>
-                </Animated>
+            </Animated>
 
                     {
                         this.state.showProjects?
@@ -50,7 +51,6 @@ class Home extends Component {
                         </ScrollableAnchor>
                         :null
                     }
-
             
         </div>
       );
