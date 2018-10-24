@@ -5,6 +5,8 @@
     padding-top: 65px;
 }
 
+/* ------------- IMAGES------------------ */
+
 .container-img {
     width: 50%;
     display: inline-flex;
@@ -33,4 +35,27 @@ img {
     position: relative;
     top: 89px;
     right: 68%;
+}
+
+/* ----------------ABOUT ME--------------- */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.title-about {
+    font-size: 30px;
+}
+
+.container-about-text {
+    width: 65%;
+}
+
+.text {
+    text-align: left;
+    font-size: 20px;
+    text-indent: 3%;
 }
