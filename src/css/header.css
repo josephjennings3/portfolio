@@ -16,19 +16,19 @@ header {
 
 }
 
-nav {
+.header-li {
     text-decoration: none;
     flex-grow: 1;
     flex-shrink: 1;
 }
 
-ul {
+.header-li ul {
     float: right;
     margin: 0px;
     padding: 30px 30px 30px 0px;
 }
 
-li {
+.header-li li {
     display: inline;
     margin: 5px;
     border-top: 1px solid black;

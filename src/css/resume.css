@@ -1,0 +1,91 @@
+.container-resume {
+    width: 65%;
+    margin: auto;
+}
+
+/* ---------HEADER----------- */
+
+.container-resume-header {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+}
+
+.title-resume {
+    font-size: 30px;
+}
+
+.download-text {
+    font-size: 20px;
+}
+
+.download {
+    font-size:24px;
+    color: black;
+    top: 6px;
+    position: relative;
+}
+
+/* -------------SECTIONS------------ */
+
+.container-sections {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.para {
+    text-indent: 3%;
+}
+
+.resume-sections {
+    display: inherit;
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+.section-title {
+    padding-right: 5%;
+    font-size: 20px;
+    width: 106px;
+}
+
+.section-details {
+    flex-grow: 2;
+    display: flex;
+    flex-basis: 0;
+}
+
+.section-details ul {
+    display: inline;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+}
+
+.job-block {
+    padding-bottom: 10px;
+}
+
+.job-title {
+    font-weight: 700;
+}
+
+.education {
+    width: 33%;
+}
+
+/* ul {
+    list-style-type: none;
+  }
+  li::before {
+    content: ".";
+    margin-right: 0.4em;
+    position: relative;
+    top: -0.25em;
+  } */
+

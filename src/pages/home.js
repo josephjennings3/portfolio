@@ -38,7 +38,7 @@ class Home extends Component {
             </Animated>
             <Animated animationIn="fadeInDown" isVisible={true} className="arrow">
                 <a href="#projectsSection">
-                    <i class="material-icons" onClick={()=>this.operation()}>keyboard_arrow_down</i>
+                    <i class="material-icons arrow" onClick={()=>this.operation()}>keyboard_arrow_down</i>
                 </a>
             </Animated>
 

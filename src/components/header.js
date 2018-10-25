@@ -11,7 +11,7 @@ class Header extends Component {
                     <section className="title">
                         <NavLink to ='/' exact >Joseph Jennings III</NavLink>
                     </section>
-                        <nav>
+                        <nav className="header-li">
                             <ul>
                                 <li>
                                     <NavLink to ='/pages/projectspage' exact activeStyle={
