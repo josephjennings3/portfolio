@@ -3,6 +3,7 @@
     flex-direction: column;
     align-items: center;
     padding-top: 65px;
+    padding-bottom: 150px;
 }
 
 /* ------------- IMAGES------------------ */
@@ -13,8 +14,10 @@
     padding-bottom: 30px;
 }
 
-img {
+.container-img img {
     width: 100%;
+    box-shadow: -7px 7px 16px black;
+
 }
 
 .img-bike {
