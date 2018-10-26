@@ -1,6 +1,7 @@
 .container-resume {
     width: 65%;
     margin: auto;
+    padding-bottom: 150px;
 }
 
 /* ---------HEADER----------- */
@@ -78,14 +79,4 @@
 .education {
     width: 33%;
 }
-
-/* ul {
-    list-style-type: none;
-  }
-  li::before {
-    content: ".";
-    margin-right: 0.4em;
-    position: relative;
-    top: -0.25em;
-  } */
 

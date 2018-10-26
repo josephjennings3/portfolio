@@ -20,10 +20,10 @@ class Contact extends Component {
                   <a href="mailto:jajenningsiii@email.com"><SocialIcon network="email" /></a>
                 </div>
                 <div className="-contact-linkedin">
-                  <a href="https://www.linkedin.com/in/josephjennings3/" target="_blank"><SocialIcon network="linkedin" /></a>
+                  <a href="https://www.linkedin.com/in/josephjennings3/" target="_blank" rel="noopener noreferrer"><SocialIcon network="linkedin" /></a>
                 </div>
                 <div className="contact-github">
-                  <a href="https://github.com/josephjennings3" target="_blank"><SocialIcon network="github" /></a>
+                  <a href="https://github.com/josephjennings3" target="_blank" rel="noopener noreferrer"><SocialIcon network="github" /></a>
                 </div>
               </main>
             </div>

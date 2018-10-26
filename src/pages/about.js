@@ -3,22 +3,25 @@ import '../css/about.css';
 import Bike from '../images/bike.jpg';
 import Jtree from '../images/jtree.jpg';
 import Josephandsister from '../images/josephandsister.jpg';
+import {Animated} from "react-animated-css";
 
 class About extends Component {
     render() {
       return (
           <div className="container-about">
-            <section className="container-img">
-              <div className="img-bike">
-                <img src={Bike} />
-              </div>
-              <div className="img-jtree">
-                <img src={Jtree} />
-              </div>
-              <div className="img-persia">
-                <img src={Josephandsister} />
-              </div>
-            </section>
+            <Animated animationIn="fadeInDown" isVisible={true} className="about-animated">
+              <section className="container-img">
+                <div className="img-bike">
+                  <img src={Bike} alt="bicycle with downtown san diego background" />
+                </div>
+                <div className="img-jtree" >
+                  <img src={Jtree} alt="joseph and friends at joshua tree" />
+                </div>
+                <div className="img-persia">
+                  <img src={Josephandsister} alt="joseph and persia together" />
+                </div>
+              </section>
+            </Animated>
             <main>
               <p className="title-about">Who are you?</p>
               <div className="container-about-text">

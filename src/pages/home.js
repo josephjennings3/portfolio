@@ -3,7 +3,6 @@ import '../css/home.css';
 import {Animated} from "react-animated-css";
 import Projects from '../components/projects';
 import  ScrollableAnchor  from 'react-scrollable-anchor';
-import  { configureAnchors }  from 'react-scrollable-anchor';
 
 class Home extends Component {
     constructor() {
@@ -18,9 +17,6 @@ class Home extends Component {
             showProjects:true
         })
     }
-
-    // configureAnchors({offset: 5, scrollDuration: 200})
-
 
 
     render() {

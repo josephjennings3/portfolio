@@ -1,12 +1,15 @@
 .container-about {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding-top: 65px;
     padding-bottom: 150px;
 }
 
 /* ------------- IMAGES------------------ */
+
+.about-animated {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .container-img {
     width: 50%;
