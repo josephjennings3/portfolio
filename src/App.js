@@ -14,11 +14,11 @@ class App extends Component {
         <div className="App">
             <Header />
             <Switch>
-              <Route exact path= '/' exact component={Home} />
-              <Route exact path= '/pages/about' exact component={About} />
-              <Route exact path= '/pages/projectspage' exact component={ProjectsPage} />
-              <Route exact path= '/pages/contact' exact component={Contact} />
-              <Route exact path= '/pages/resume' exact component={Resume} />
+              <Route exact path= '/'  component={Home} />
+              <Route exact path= '/pages/about'  component={About} />
+              <Route exact path= '/pages/projectspage'  component={ProjectsPage} />
+              <Route exact path= '/pages/contact'  component={Contact} />
+              <Route exact path= '/pages/resume'  component={Resume} />
             </Switch>
             <Footer />
         </div>
