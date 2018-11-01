@@ -4,6 +4,12 @@ import Bike from '../images/bike.jpg';
 import Jtree from '../images/jtree.jpg';
 import Josephandsister from '../images/josephandsister.jpg';
 import {Animated} from "react-animated-css";
+import { Switch, Route } from 'react-router-dom';
+import Contact from './contact.js';
+import Resume from './resume.js';
+import Home from './home.js';
+import ProjectsPage from './projectspage.js';
+
 
 class About extends Component {
     render() {
@@ -42,6 +48,13 @@ class About extends Component {
                 </p>
               </div>
             </main>
+            <Switch>
+              <Route exact path= '/'  component={Home} />
+              
+              <Route exact path= '/pages/projectspage'  component={ProjectsPage} />
+              <Route exact path= '/pages/contact'  component={Contact} />
+              <Route exact path= '/pages/resume'  component={Resume} />
+            </Switch>
           </div>
       );
     }
