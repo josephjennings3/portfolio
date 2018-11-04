@@ -5,6 +5,7 @@ import Jtree from '../images/jtree.jpg';
 import Josephandsister from '../images/josephandsister.jpg';
 import {Animated} from "react-animated-css";
 
+
 class About extends Component {
     render() {
       return (
@@ -46,5 +47,7 @@ class About extends Component {
       );
     }
   }
+
+
   
   export default About;
