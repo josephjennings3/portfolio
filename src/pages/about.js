@@ -24,13 +24,16 @@ class About extends Component {
               </section>
             </Animated>
             <main>
-              <p className="title-about">Who are you?</p>
+              <p className="title-about">Who am I?</p>
               <div className="container-about-text">
                 <p className="text">
                   I am a Web Developer who is passionate about Front-end and UX/UI design. I've spent years self-training in HTML5, CSS3, and Photoshop with the help of a mentor. Througout those years I've taken on multiple freelance jobs that allowed me to combine these three skills to help others in their own goals and dreams. During that phase of my life I found the joy and putting these websites together as if they were puzzles and adding in my creativity to transform them into works of art. <br />
                 </p> 
                 <p className="text">
                   After some time, I decided to take the dive into joining a coding bootcamp. I decided on one called LEARN Academy and they broaden my eyesight of web development further than I would've imagined. While taking this course I fell in love with React.js and UX/UI design. LEARN also pushed my education into SQL, Ruby on Rails, Github, and pair programming.<br />
+                </p>
+                <p className="text">
+                  Right before joining LEARN, I worked as an intern for a small marketing startup. I was placed in charge of collecting data, putting up Facebook ads, and learning how to design and code attractive ads. This later led me to working for another startup company as a wordpress developer. There I was in charge of creating ecommerce shops, designing banners, and assisting more experienced developers to learn from their code.
                 </p>
                 <p className="text">
                   Currently, I am continuing to strengthen my skillsets in web development. I eagerly study every day, attend meetups to get involved with the community, as well as apply for jobs around San Diego in search for the perfect environment to grow and prosper.
