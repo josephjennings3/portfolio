@@ -11,7 +11,7 @@ class Header extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            menuOpen: true
+            menuOpen: false
         }
     }
 
@@ -32,10 +32,11 @@ class Header extends Component {
                         <NavLink to ='/' exact >Joseph Jennings III</NavLink>
                     </section>
                     <nav className="header-li">
-                        <MediaQuery maxDeviceWidth={600}>
+                        <MediaQuery maxDeviceWidth={800}>
                             <Menu
                                 isOpen={this.state.menuOpen}
                                 onStateChange={(state) => this.handleStateChange(state)}
+                                right
                             >
                                 <a id="menu-projects" className="menu-item" href="/pages/projectspage" onClick={() => this.closeMenu()}>Projects</a>
                                 <a id="menu-about" className="menu-item" href="/pages/about" onClick={() => this.closeMenu()}>About</a>
@@ -43,7 +44,7 @@ class Header extends Component {
                                 <a id="menu-contact" className="menu-item" href="/pages/contact" onClick={() => this.closeMenu()}>Contact</a>
                             </Menu>  
                         </MediaQuery>
-                        <MediaQuery minDeviceWidth={600}>
+                        <MediaQuery minDeviceWidth={800}>
                             <ul>
                                 <li>
                                     <NavLink to ='/pages/projectspage' exact activeStyle={
