@@ -7,6 +7,7 @@ import ishi from '../images/ishiicon.png';
 import move from '../images/moveicon.png';
 import native from '../images/nativeicon.png';
 import newicon from '../images/newicon.png';
+import hackz from '../images/hackz3.png';
 import Button from '@material-ui/core/Button';
 
 class Projects extends Component {
@@ -80,7 +81,7 @@ class Projects extends Component {
                         </a>
                     </section>
                 </div>    
-                <div className="project-container bottom">
+                <div className="project-container">
                     <section className="project-ex">
                         <img src={newicon} alt="preview of news project"/>
                         <p className="project-title">Newsroom Project</p>
@@ -88,6 +89,16 @@ class Projects extends Component {
                         <a href="https://objective-edison-fceb84.netlify.com/" target="_blank" rel="noopener noreferrer">
                             <Button variant="contained">
                             <span classname="view-button"> View Newsroom </span>
+                            </Button>
+                        </a>
+                    </section>
+                    <section className="project-ex">
+                        <img src={hackz} alt="preview of hackz project"/>
+                        <p className="project-title">Hackz Blog</p>
+                        <p className="lang">React.js</p>
+                        <a href="https://https://hackz.com/" target="_blank" rel="noopener noreferrer">
+                            <Button variant="contained">
+                            <span classname="view-button"> View Hackz </span>
                             </Button>
                         </a>
                     </section>
