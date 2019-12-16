@@ -12,3 +12,11 @@
 .projects-text {
     width: 60%;
 }
+
+@media only screen and (max-width: 800px) {
+
+    .projects-container {
+        padding-bottom: 0px;
+        margin-bottom: -30px;
+    }
+}
