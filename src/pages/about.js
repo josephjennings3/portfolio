@@ -39,7 +39,7 @@ class About extends Component {
                   Currently, I am continuing to strengthen my skillsets in web development. I eagerly study every day, attend meetups to get involved with the community, as well as apply for jobs around San Diego in search for the perfect environment to grow and prosper.
                 </p>
               </div>
-              <p className="title-about">What do you do outside of web development?</p>
+              <p className="title-about">What do I do outside of web development?</p>
               <div className="container-about-text">
                 <p className="text">
                   Outside of web development, I can be found taking long bike rides along the beach or training my body in the form of weight lifting. I enjoy pushing my mind and body to its fullest potential without burning myself out. I also can be found reading a variety of books, spending time with my family, or discovering my favorite dive bar where I can engage in conversation with old or new friends.

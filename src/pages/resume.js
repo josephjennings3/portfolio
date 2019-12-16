@@ -8,9 +8,6 @@ class Resume extends Component {
           <div className="resume">
             <main className="container-resume">
               <div className="container-resume-header">
-                <div className="title-resume">
-                  Joseph Jennings III
-                </div>
                 <a href="https://docs.google.com/document/d/1YdDKRCx6zZjnkcs-0R2bJF3uSeMBANuEbxk_hkIoBdk//export?format=pdf" className="download-text">Download Resume<i class="download material-icons ">get_app</i></a>
               </div>
               <div className="container-sections">
@@ -73,7 +70,15 @@ class Resume extends Component {
                   <div className="job-details">
                     <div className="job-block">
                       <div className="job-title">
-                        Tutti, React Native Developer (2018-Current)
+                        Launchify, Front-End Developer (2018-2019)
+                      </div>
+                      <div className="job-description">
+                        Created multiple ecommerce websites using Wordpress, HTML, and CSS. Designed banners and ads using Photoshop. Built sites using React.js and learned to use programs built by Senior Developers. Conducted tests using Ghost Inspector and maintained inventory using Limelight.
+                      </div>
+                    </div>
+                    <div className="job-block">
+                      <div className="job-title">
+                        Tutti, React Native Developer (2018-2018)
                       </div>
                       <div className="job-description">
                         Dived into the experience of React Native and assisted a start-up company build their mobile app. I organized stylesheets, built a calendar function, and set up the working environment with Docker.

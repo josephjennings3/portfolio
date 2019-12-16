@@ -1,6 +1,11 @@
+.content-wrap {
+    padding-bottom: 2.5em;
+}
+
 .contact {
-    height: 80.4vh;
-    padding-bottom: 7px;
+    padding-bottom: 0px;
+    height: 78vh;
+    position: relative;
 }
 
 .contact-flex-container {
@@ -9,6 +14,9 @@
     justify-content: space-evenly;
     text-align: center;
     padding-top: 50px;
+    padding-bottom: 2.5rem;
+    position: absolute;
+    width: 100%;
 }
 
 .greeting {
@@ -44,4 +52,10 @@
 
 .contact-github {
     padding: 0px 10px;
+}
+
+@media only screen and (max-width: 800px) {
+    .contact-subtitle {
+        width: 90%;
+    }
 }
