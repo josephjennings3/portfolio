@@ -5,6 +5,7 @@
   "dependencies": {
     "@material-ui/core": "^3.2.2",
     "material-design-icons": "^3.0.1",
+    "mobiscroll": "^3.0.0-beta6",
     "react": "^16.5.2",
     "react-animated-css": "^1.0.4",
     "react-burger-menu": "^2.5.4",

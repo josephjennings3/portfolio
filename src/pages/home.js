@@ -12,12 +12,6 @@ class Home extends Component {
         }
     }
 
-    operation(){
-        this.setState({
-            showProjects:true
-        })
-    }
-
 
     render() {
       return (
@@ -34,20 +28,12 @@ class Home extends Component {
             </Animated>
             <Animated animationIn="fadeInDown" isVisible={true} className="arrow">
                 <a href="#projectsSection">
-                    <i class="material-icons arrow" onClick={()=>this.operation()}>keyboard_arrow_down</i>
+                    <i class="material-icons arrow" >keyboard_arrow_down</i>
                 </a>
             </Animated>
-
-                    {
-                        this.state.showProjects?
-                        <ScrollableAnchor id={'projectsSection'}>
-                            <div>
-                                <Projects />
-                            </div>
-                        </ScrollableAnchor>
-                        :null
-                    }
-            
+            <div>
+                <Projects />
+            </div>          
         </div>
       );
     }
