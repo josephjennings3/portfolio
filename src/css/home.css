@@ -31,3 +31,26 @@
 .arrow { 
     font-size: 100px; 
 }
+
+/* ---------MOBILE----------- */
+
+@media only screen and (max-width: 600px) {
+    .container-home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 50px;
+    }
+
+    .animated-intro {
+        width: 70%;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    .home {
+        padding-bottom: 55px;
+    }
+}

@@ -5,14 +5,7 @@ import Projects from '../components/projects';
 import  ScrollableAnchor  from 'react-scrollable-anchor';
 
 class Home extends Component {
-    constructor() {
-        super()
-        this.state={
-            showProjects:false
-        }
-    }
-
-
+    
     render() {
       return (
         <div className="container-home">

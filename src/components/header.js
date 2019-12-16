@@ -8,6 +8,17 @@ import { slide as Menu } from 'react-burger-menu'
 
 class Header extends Component {
 
+    constructor(props) {
+        super(props)
+        this.state = {
+            menuOpen: true
+        }
+    }
+
+    handleStateChange (state) {
+        this.setState({menuOpen: state.isOpen})  
+      }
+
     showSettings (event) {
         event.preventDefault();
        
@@ -20,41 +31,43 @@ class Header extends Component {
                     <section className="title">
                         <NavLink to ='/' exact >Joseph Jennings III</NavLink>
                     </section>
-                        <nav className="header-li">
-                            <MediaQuery maxDeviceWidth={600}>
-                                <Menu>
-                                    <a id="menu-projects" className="menu-item" href="/">Home</a>
-                                    <a id="menu-about" className="menu-item" href="/">About</a>
-                                    <a id="menu-resume" className="menu-item" href="/">Resume</a>
-                                    <a id="menu-contact" className="menu-item" href="/">Contact</a>
-                                    <a onClick={ this.showSettings } className="menu-item--small" href="">Settings</a>
-                                </Menu>                                
-                            </MediaQuery>
-                            <MediaQuery minDeviceWidth={600}>
-                                <ul>
-                                    <li>
-                                        <NavLink to ='/pages/projectspage' exact activeStyle={
-                                            {borderTop: 'solid 3px #000'}
-                                        }>Projects</NavLink>
-                                    </li>
-                                    <li>
-                                        <NavLink to ='/pages/about' exact activeStyle={
-                                            {borderTop: 'solid 3px #000'}
-                                        }>About</NavLink>
-                                    </li>
-                                    <li>
-                                        <NavLink to ='/pages/resume' exact activeStyle={
-                                            {borderTop: 'solid 3px #000'} 
-                                        }>Resume</NavLink>
-                                    </li>
-                                    <li>
-                                        <NavLink to ='/pages/contact' exact activeStyle={
-                                            {borderTop: 'solid 3px #000'} 
-                                        }>Contact</NavLink>
-                                    </li>
-                                </ul>
-                            </MediaQuery>
-                        </nav>
+                    <nav className="header-li">
+                        <MediaQuery maxDeviceWidth={600}>
+                            <Menu
+                                isOpen={this.state.menuOpen}
+                                onStateChange={(state) => this.handleStateChange(state)}
+                            >
+                                <a id="menu-projects" className="menu-item" href="/pages/projectspage" onClick={() => this.closeMenu()}>Projects</a>
+                                <a id="menu-about" className="menu-item" href="/pages/about" onClick={() => this.closeMenu()}>About</a>
+                                <a id="menu-resume" className="menu-item" href="/pages/resume" onClick={() => this.closeMenu()}>Resume</a>
+                                <a id="menu-contact" className="menu-item" href="/pages/contact" onClick={() => this.closeMenu()}>Contact</a>
+                            </Menu>  
+                        </MediaQuery>
+                        <MediaQuery minDeviceWidth={600}>
+                            <ul>
+                                <li>
+                                    <NavLink to ='/pages/projectspage' exact activeStyle={
+                                        {borderTop: 'solid 3px #000'}
+                                    }>Projects</NavLink>
+                                </li>
+                                <li>
+                                    <NavLink to ='/pages/about' exact activeStyle={
+                                        {borderTop: 'solid 3px #000'}
+                                    }>About</NavLink>
+                                </li>
+                                <li>
+                                    <NavLink to ='/pages/resume' exact activeStyle={
+                                        {borderTop: 'solid 3px #000'} 
+                                    }>Resume</NavLink>
+                                </li>
+                                <li>
+                                    <NavLink to ='/pages/contact' exact activeStyle={
+                                        {borderTop: 'solid 3px #000'} 
+                                    }>Contact</NavLink>
+                                </li>
+                            </ul>
+                        </MediaQuery>
+                    </nav>
                 </header>
             </div>
         );
