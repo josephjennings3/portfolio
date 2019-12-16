@@ -10,13 +10,13 @@ class Footer extends Component {
             <div className="footer-container">
                 <section className="footer-contact">
                     <div className="footer-icon">
-                        <a href="mailto:jajenningsiii@email.com" rel="noopener noreferrer"><SocialIcon network="email" color="#faebd7" style={{ height: 30, width: 30 }}/></a>
+                        <a href="mailto:jajenningsiii@email.com" rel="noopener noreferrer"><SocialIcon network="email" color="#fff" style={{ height: 30, width: 30 }}/></a>
                     </div>
                     <div className="footer-icon">
-                        <a href="https://www.linkedin.com/in/josephjennings3/" target="_blank" rel="noopener noreferrer"><SocialIcon network="linkedin" color="#faebd7" style={{ height: 30, width: 30 }}/></a>
+                        <a href="https://www.linkedin.com/in/josephjennings3/" target="_blank" rel="noopener noreferrer"><SocialIcon network="linkedin" color="#fff" style={{ height: 30, width: 30 }}/></a>
                     </div>
                     <div className="footer-icon">
-                        <a href="https://github.com/josephjennings3" target="_blank" rel="noopener noreferrer"><SocialIcon network="github" color="#faebd7" style={{ height: 30, width: 30 }} /></a>
+                        <a href="https://github.com/josephjennings3" target="_blank" rel="noopener noreferrer"><SocialIcon network="github" color="#fff" style={{ height: 30, width: 30 }} /></a>
                     </div>
                 </section>
                 <section className="signature">

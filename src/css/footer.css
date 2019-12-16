@@ -8,7 +8,7 @@
 .footer-container {
     display: flex;
     justify-content: space-around;
-    color: antiquewhite;
+    color: white;
     background-color: black;
     padding: 6px 0px;
 }
@@ -35,5 +35,10 @@
         display: block;
         text-align: right;
         padding-left: 65px;
+    }
+
+    .footer-contact {
+        padding-left: 10px;
+        padding-top: 3px;
     }
 }
